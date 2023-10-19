@@ -11,7 +11,27 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>
-            }
+            },
+            {
+                path: '/addProduct',
+                element: <Home></Home>
+            },
+            {
+                path: '/myCart',
+                element: <Home></Home>
+            },
+            {
+                path: '/blog',
+                element: <Home></Home>
+            },
+            {
+                path: '/faq',
+                element: <Home></Home>
+            },
+            {
+                path: '/login',
+                element: <Home></Home>
+            },
         ]
     }
 ])
