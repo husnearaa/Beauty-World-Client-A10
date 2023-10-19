@@ -5,8 +5,8 @@ const Footer = () => {
         <div>
             <footer className="footer p-20 bg-[#192038] text-white sticky bottom-0">
                 <aside>
-                    <p className="font-bold text-2xl">
-                        Wedding Dairy <br />
+                    <p className="font-bold text-3xl">
+                        Beauty World <br />
                     </p>
                     <p>Copyright © 2023 - All right reserved</p>
                 </aside>
