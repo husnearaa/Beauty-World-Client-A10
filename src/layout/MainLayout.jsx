@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Navbar/Footer/Footer";
 
 
 const MainLayout = () => {
@@ -7,7 +8,7 @@ const MainLayout = () => {
         <div className="max-w-[1300px] mx-auto ">
             <Navbar></Navbar>
             <Outlet></Outlet>
-
+            <Footer></Footer>
         </div>
     );
 };
