@@ -4,13 +4,15 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCNazBdTAy68uJk0WGfdnpnPgMUtTyc1vE",
-  authDomain: "beauty-world-a21cb.firebaseapp.com",
-  projectId: "beauty-world-a21cb",
-  storageBucket: "beauty-world-a21cb.appspot.com",
-  messagingSenderId: "224979908590",
-  appId: "1:224979908590:web:ee9407f00abd522049c0ff"
+  apiKey:import.meta.env.VITE_APIKEY,
+  authDomain:import.meta.env.VITE_AUTHDOMAIN,
+  projectId:import.meta.env.VITE_PROJECTID,
+  storageBucket:import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId:import.meta.env.VITE_MESSAGINGSENDERID,
+  appId:import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
