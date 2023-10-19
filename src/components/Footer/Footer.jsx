@@ -3,7 +3,7 @@ import { FaFacebookF, FaYoutube, FaTwitter } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer p-20 bg-[#192038] text-white sticky bottom-0">
+            <footer className="footer p-20 bg-black text-white sticky bottom-0">
                 <aside>
                     <p className="font-bold text-3xl">
                         Beauty World <br />
