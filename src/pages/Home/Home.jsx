@@ -10,13 +10,13 @@ import AskedQuestions from "../AskedQuestions/AskedQuestions";
 
 
 
-const Home = ({darkMood}) => {
+const Home = () => {
 
   const brandsName =useLoaderData()
   console.log(brandsName);
 
     return (
-        <div className={`${darkMood ? "bg-gray-900 text-white " : "bg-white"}`}>
+        <div>
             <Banner></Banner>
             <Brands brandsName={brandsName}></Brands>
             <ThemeVideo></ThemeVideo>
