@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "brand_name": "L'Oréal",
+      "brand_name": "LOreal",
       "brand_image": "https://i.ibb.co/mC0Pm06/loreal.png"
     },
     {
@@ -11,7 +11,7 @@
     },
     {
       "id": 3,
-      "brand_name": "Estée Lauder",
+      "brand_name": "Estee Lauder",
       "brand_image": "https://i.ibb.co/w0qdxhH/este.png"
     },
     {

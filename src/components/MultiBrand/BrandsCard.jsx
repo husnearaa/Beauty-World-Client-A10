@@ -6,7 +6,7 @@ const BrandsCard = ({brand}) => {
  
     return (
         <div className="pt-10">
-           <Link to={`/brands/${id}`}>
+           <Link to={`/brands/${brand_name}`}>
            <div className=" flex w-full max-w-[26rem] flex-col bg-white bg-clip-border  shadow">
                 <img src={brand_image} />
                 <div className="p-6">

@@ -3,7 +3,7 @@
 const AskedQuestions = () => {
     return (
         <div>
-            <h2 className="text-4xl font-bold text-center mt-10">Frequently Asked <span className="text-[#C2A973]">Questions</span></h2>
+            <h2 className="text-5xl font-bold text-center mt-10">Frequently Asked <span className="text-[#C2A973]">Questions</span></h2>
             <div className="flex justify-center items-center py-20">
                 <div className="join join-vertical w-4/5">
                     <div className="collapse collapse-arrow join-item border border-black">

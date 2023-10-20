@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
 
-const Navbar = () => {
+const Navbar = ({handleDark, darkMood}) => {
 
 
 
@@ -25,7 +25,10 @@ const Navbar = () => {
 
 
     return (
-        <div>
+
+
+
+        <div className={`${darkMood ? "bg-gray-900 text-white " : "bg-white"}`}>
             <nav className="flex justify-between items-center flex-col gap-3 md:flex-row py-5 px-6 text-lg ">
                 <Logo></Logo>
                 <ul className="flex gap-5 flex-col md:flex-row font-bold">
@@ -80,6 +83,7 @@ const Navbar = () => {
                             FAQ
                         </NavLink>
                     </li>
+    
                     <li>
                         <NavLink
                             to="/login"
@@ -92,6 +96,11 @@ const Navbar = () => {
                     </li>
                 </ul>     
                  {/* <button className="btn bg-[#C2A973] text-white px-10 rounded-none">Login</button> */}
+                 <div>
+                    <button onClick={handleDark}>
+                        {`${darkMood ? 'Dark' :" White" }`}
+                    </button>
+                 </div>
                  {
                     user ? <>
                         <span>{user.email}</span>
