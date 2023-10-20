@@ -95,7 +95,7 @@ const Navbar = () => {
                  {
                     user ? <>
                         <span>{user.email}</span>
-                        <button onClick={handleSignOut} className="btn bg-[#C2A973] text-white px-10 rounded-none">Sign Out</button>
+                        <button onClick={handleSignOut} className="btn bg-[#C2A973] text-white px-10 border-black rounded-none">Sign Out</button>
                     </>
                         :
                         <Link to='/login'>

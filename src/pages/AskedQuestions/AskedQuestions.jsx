@@ -3,79 +3,79 @@
 const AskedQuestions = () => {
     return (
         <div>
-            <h2 className="text-4xl font-bold text-center mt-10">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-bold text-center mt-10">Frequently Asked <span className="text-[#C2A973]">Questions</span></h2>
             <div className="flex justify-center items-center py-20">
                 <div className="join join-vertical w-4/5">
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" checked="checked" />
                         <div className="collapse-title text-xl font-medium">
-                        What are the key services offered by a wedding planner?
+                        What is the best L'Oréal product for achieving a flawless complexion?
                         </div>
                         <div className="collapse-content">
-                            <p>Wedding planners provide services such as vendor selection, budget management, timeline creation, and day-of coordination.</p>
+                            <p> L'Oréal's Infallible Pro-Matte Foundation is a top choice for a matte, long-lasting finish that covers imperfections.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        Why should I hire a wedding planner?
+                        Are L'Oréal products cruelty-free?
                         </div>
                         <div className="collapse-content">
-                            <p>Hiring a wedding planner can reduce stress, save time, and ensure your wedding day runs smoothly.</p>
+                            <p> L'Oréal has a range of cruelty-free products under their "L'Oréal Paris" line. Look for the Leaping Bunny logo for certified cruelty-free items.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        How soon should I book a photographer/videographer for my wedding?
+                        Which Estée Lauder product is best for reducing signs of aging?
                         </div>
                         <div className="collapse-content">
-                            <p>It's recommended to book a photographer/videographer at least 6-12 months in advance to secure your preferred professional.</p>
+                            <p>The Estée Lauder Advanced Night Repair serum is renowned for its ability to reduce fine lines and improve skin texture.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        What's the difference between photography and videography packages?
+                        Does Estée Lauder offer products suitable for sensitive skin?
                         </div>
                         <div className="collapse-content">
-                            <p>Photography captures still moments, while videography records the entire day in motion. Many couples choose both for a complete memory.</p>
+                            <p>Estée Lauder's "Resilience Multi-Effect" line includes products designed for sensitive skin, focusing on hydration and firmness.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        How can I choose the right floral and decor theme for my wedding?
+                        What is the signature fragrance of Chanel?
                         </div>
                         <div className="collapse-content">
-                            <p>Consider your wedding colors, style, and budget. Consult with a professional florist and decorator for expert guidance.</p>
+                            <p>Chanel No. 5 is the iconic fragrance that continues to be a symbol of timeless elegance and luxury.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        When should I schedule my hair and makeup trial?
+                        Which Dior mascara provides the most volume and length to lashes?
                         </div>
                         <div className="collapse-content">
-                            <p>Schedule your trial 2-3 months before your wedding to ensure you're comfortable with your chosen look.</p>
+                            <p>Dior's Diorshow Mascara is renowned for its ability to add both volume and length to your lashes.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        How can I accommodate dietary restrictions for my guests?
+                        What is the best-selling Urban Decay eyeshadow palette?
                         </div>
                         <div className="collapse-content">
-                            <p>Work with your caterer to offer a variety of menu options, including vegetarian, vegan, gluten-free, and allergy-friendly choices.</p>
+                            <p>Urban Decay's Naked Palette series, such as the Naked3 Palette, is extremely popular for versatile and flattering eyeshadow shades.</p>
                         </div>
                     </div>
-                    <div className="collapse collapse-arrow join-item border border-base-300">
+                    <div className="collapse collapse-arrow join-item border border-black">
                         <input type="radio" name="my-accordion-4" />
                         <div className="collapse-title text-xl font-medium">
-                        What types of entertainment are popular for weddings?
+                        Are Revlon hair care products suitable for all hair types?
                         </div>
                         <div className="collapse-content">
-                            <p>Popular choices include live bands, DJs, magicians, photo booths, and even fireworks for a memorable celebration</p>
+                            <p>Revlon offers a wide range of hair care products suitable for different hair types, including shampoos, conditioners, and styling products.</p>
                         </div>
                     </div>
                 </div>
