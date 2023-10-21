@@ -55,6 +55,7 @@ Welcome to Beauty World, your premier online destination for high-quality cosmet
   - Stay connected through social media platforms for updates about the products.
 
 
- 
+
+Feel free to visit our website: [Beauty World](https://capable-gumption-49438f.netlify.app/)
 
 
