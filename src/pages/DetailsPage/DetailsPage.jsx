@@ -12,26 +12,26 @@ const DetailsPage = () => {
 
 
     const addHandleCart = () => {
-        fetch("http://localhost:5000/addToCart", {
+        fetch("https://beauty-world-server.vercel.app/addToCart", {
             method: "POST",
             headers: {
-              "content-type": "application/json",
+                "content-type": "application/json",
             },
             body: JSON.stringify(detailsData),
-          })
+        })
             .then((res) => res.json())
             .then((data) => {
-              
-              swal("Successfully Added!", "Successfully added to the cart", "success");
-              
+
+                swal("Successfully Added!", "Successfully added to the cart", "success");
+
             })
             .catch(error => {
-              return swal("Warning", "This item is already in your Cart", "warning");
+                return swal("Warning", "This item is already in your Cart", "warning");
             })
             ;
-            
-    } 
-        
+
+    }
+
 
 
 

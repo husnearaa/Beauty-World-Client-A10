@@ -7,7 +7,7 @@ const SingleBrand = ({ eachBrand }) => {
     const { _id, brand, type, name, price, rating, description, image } = eachBrand 
 
     return (
-        <div>
+        <div className="mb-10">
 
             <div className="relative flex w-full max-w-[26rem] flex-col shadow-xl bg-white bg-clip-border text-black">
                 <div className="relative mx-4 mt-4 overflow-hidden">
@@ -17,7 +17,7 @@ const SingleBrand = ({ eachBrand }) => {
                 </div>
                 <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
-                        <h5 className="block  text-xl text-black  font-medium ">
+                        <h5 className="block  text-2xl text-black  font-semibold ">
                             {name}
                         </h5>
                      
@@ -27,13 +27,13 @@ const SingleBrand = ({ eachBrand }) => {
                     <h5 className="block text-xl font-bold">
                         {brand}
                     </h5>
-                    <h5 className="block text-xl font-bold">
+                    <h5 className="block text-lg font-bo">
                         {type}
                     </h5>
-                    <h5 className="block text-xl font-bold">
-                        {price}
+                    <h5 className="block text-lg font-medium">
+                        ${price}
                     </h5>
-                    <h5 className="block text-xl font-bold">
+                    <h5 className="block text-md font-medium">
                         {description}
                     </h5>
 

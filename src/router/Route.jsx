@@ -28,12 +28,12 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: '/addProduct',
                 element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
-                
+
             },
             {
                 path: '/myCart',
-                element: <MyCart></MyCart>,
-                loader: () => fetch('http://localhost:5000/addToCart')
+                element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
+                loader: () => fetch('https://beauty-world-server.vercel.app/addToCart')
             },
             {
                 path: '/blog',
@@ -54,17 +54,17 @@ const myCreatedRoute = createBrowserRouter([
             {
                 path: '/brands/:brand',
                 element: <BrandDetails></BrandDetails>,
-                loader: () => fetch('http://localhost:5000/brands')
+                loader: () => fetch('https://beauty-world-server.vercel.app/brands')
             },
             {
                 path: '/products/:id',
-                element: <DetailsPage></DetailsPage>,
-                loader: ({params}) => fetch(`http://localhost:5000/brands/${params.id}`)
+                element: <PrivateRoute><DetailsPage></DetailsPage></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://beauty-world-server.vercel.app/brands/${params.id}`)
             },
             {
                 path: '/update/:id',
-                element: <UpdateProduct></UpdateProduct>,
-                loader: ({params}) => fetch(`http://localhost:5000/brands/${params.id}`)
+                element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
+                loader: ({ params }) => fetch(`https://beauty-world-server.vercel.app/brands/${params.id}`)
             },
 
         ]

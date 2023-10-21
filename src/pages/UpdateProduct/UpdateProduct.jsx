@@ -8,13 +8,13 @@ const UpdateProduct = () => {
     const updatedData = useLoaderData()
     const navigate = useNavigate()
 
-    const {_id, name, brand, type, price, description, rating, image} = updatedData
+    const { _id, name, brand, type, price, description, rating, image } = updatedData
 
-    const handleUpdate = event =>{
+    const handleUpdate = event => {
         event.preventDefault();
 
         const form = event.target;
-    
+
         const name = form.name.value;
         const brand = form.brand.value;
         const type = form.type.value;
@@ -22,28 +22,28 @@ const UpdateProduct = () => {
         const description = form.description.value;
         const rating = form.rating.value;
         const image = form.image.value;
-    
+
         const addedProduct = { name, brand, type, price, description, rating, image }
-    
+
         console.log(addedProduct);
 
 
-        fetch(`http://localhost:5000/addToCart/${_id}`, {
+        fetch(`https://beauty-world-server.vercel.app/addToCart/${_id}`, {
             method: "PUT",
             headers: {
-              "content-type": "application/json",
+                "content-type": "application/json",
             },
             body: JSON.stringify(addedProduct),
-          })
+        })
             .then((res) => res.json())
             .then((data) => {
 
-                if(data.modifiedCount>0){
+                if (data.modifiedCount > 0) {
                     navigate(-1)
-                    return swal("Good!", "Successfully updated", "success")    
+                    return swal("Good!", "Successfully updated", "success")
                 }
-               
-              console.log(data);
+
+                console.log(data);
             });
 
     }
@@ -53,7 +53,7 @@ const UpdateProduct = () => {
 
     return (
         <div>
-              <div className="mt-10 mb-10">
+            <div className="mt-10 mb-10">
                 <div className="bg-[#C2A973] p-24 mx-auto w-4/5">
                     <h2 className="text-4xl font-extrabold text-center text-black pb-5">Update Product</h2>
                     <p className="text-center text-black font-medium text-lg mb-10">
@@ -61,7 +61,7 @@ const UpdateProduct = () => {
                         Estée Lauder, Chanel, Dior, Urban Decay, and Revlon.
                         Share your favorites and inspire beauty enthusiasts worldwide.
                     </p>
-                    <form  onSubmit={handleUpdate} >
+                    <form onSubmit={handleUpdate} >
                         {/* form name and brand name */}
                         <div className="md:flex mb-8">
                             <div className="form-control md:w-1/2">

@@ -8,11 +8,11 @@ const MyCart = () => {
     const carts = useLoaderData()
     console.log('carts', carts);
 
-    const[remaining, setRemaining] = useState(carts);
+    const [remaining, setRemaining] = useState(carts);
 
 
 
-    const handleDelete = (id) =>{
+    const handleDelete = (id) => {
         console.log(id);
         Swal.fire({
             title: 'Are you sure?',
@@ -22,25 +22,25 @@ const MyCart = () => {
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Yes, delete it!'
-          }).then((result) => {
+        }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/delete/${id}`, {
-                    method:"DELETE"
+                fetch(`https://beauty-world-server.vercel.app/delete/${id}`, {
+                    method: "DELETE"
                 })
-                .then((res)=>{
-                    console.log(res)
-                  const remained =  remaining.filter(remain => remain._id != id)
-                  setRemaining(remained)
+                    .then((res) => {
+                        console.log(res)
+                        const remained = remaining.filter(remain => remain._id != id)
+                        setRemaining(remained)
 
-                    Swal("Successfully Added!", "Successfully added to the cart", "success")
-                }
-                )
-                .catch(error => console.log(error) )
-              
+                        Swal("Successfully Added!", "Successfully added to the cart", "success")
+                    }
+                    )
+                    .catch(error => console.log(error))
+
             }
-          })
-        
-      
+        })
+
+
     }
 
     return (
@@ -71,7 +71,7 @@ const MyCart = () => {
                         {
                             remaining?.map((cart, i) => {
 
-                                const {_id, name, brand, type, price } = cart
+                                const { _id, name, brand, type, price } = cart
                                 return <tr key={i} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                                     <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                         {name}
@@ -86,7 +86,7 @@ const MyCart = () => {
                                         ${price}
                                     </td>
                                     <td className="px-6 py-4 text-right">
-                                        <button onClick={()=> handleDelete(_id)} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</button>
+                                        <button onClick={() => handleDelete(_id)} className="font-medium text-blue-600 dark:text-blue-500 hover:underline">Delete</button>
                                     </td>
                                 </tr>
                             })

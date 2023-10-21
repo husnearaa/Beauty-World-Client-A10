@@ -3,47 +3,47 @@ import Swal from 'sweetalert2'
 const AddProduct = () => {
 
 
- const handleAddProduct = event => {
-    event.preventDefault();
+    const handleAddProduct = event => {
+        event.preventDefault();
 
-    const form = event.target;
+        const form = event.target;
 
-    const name = form.name.value;
-    const brand = form.brand.value;
-    const type = form.type.value;
-    const price = form.price.value;
-    const description = form.description.value;
-    const rating = form.rating.value;
-    const image = form.image.value;
+        const name = form.name.value;
+        const brand = form.brand.value;
+        const type = form.type.value;
+        const price = form.price.value;
+        const description = form.description.value;
+        const rating = form.rating.value;
+        const image = form.image.value;
 
-    const addedProduct = { name, brand, type, price, description, rating, image }
+        const addedProduct = { name, brand, type, price, description, rating, image }
 
-    console.log(addedProduct);
+        console.log(addedProduct);
 
 
-    // send data to the server
-    fetch('http://localhost:5000/brands', {
-        method: 'POST',
-        headers: {
-            'content-type': 'application/json'
-        },
-        body: JSON.stringify(addedProduct)
-    })
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            if(data.insertedId){
-                Swal.fire({
-                    title: 'Success!',
-                    text: 'Product Added Successfully',
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
-                  })
-            }
+        // send data to the server
+        fetch('https://beauty-world-server.vercel.app/brands', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(addedProduct)
         })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Product Added Successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Cool'
+                    })
+                }
+            })
 
 
- }
+    }
 
 
     return (
